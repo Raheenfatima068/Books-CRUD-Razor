@@ -1,0 +1,25 @@
+﻿@page
+@model CRUD_Razor.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container py-5">
+    <div class="p-5 mb-4 bg-white rounded-3 shadow-sm text-center">
+        <h1 class="display-5 fw-bold">Books Management System</h1>
+
+        <p class="lead mt-3">
+            Manage books using ASP.NET Core Razor Pages,
+            C#, ADO.NET, and Microsoft SQL Server.
+        </p>
+
+        <a asp-page="/Books/Index" class="btn btn-primary btn-lg mt-3">
+            View All Books
+        </a>
+
+        <a asp-page="/Books/Create" class="btn btn-success btn-lg mt-3">
+            Add New Book
+        </a>
+    </div>
+</div>
